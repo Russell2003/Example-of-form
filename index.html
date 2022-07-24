@@ -1,0 +1,50 @@
+<html>
+   <head>
+       <title>Форма</title>
+   </head>
+  <body>
+      <form action="http://www.example.com/review.php" method="post">
+        <fieldset>
+             <legend>Данные пользователя:</legend>
+             <label for="username">Имя:</label>
+             <input id="username" type="text" name="username" maxlength="100" /><br />
+             <label for="email">Email:</label>
+             <input id="email" type="email" name="email" maxlength="100" /><br />
+        </fieldset>
+        <p></p>
+       <fieldset>
+             <legend>Ваше мнение:</legend>
+             <p><label for="hear-about">Как вы узнали о нас?</label>
+             <select name="browzers" id="hear-about">
+             <option value="Google">Google</option>
+             <option value="Firefox>Firefox</option>
+             <option value="Opera">Opera</option>
+             <option value="Internet Explorer">Internet Explorer</option>
+             </select>
+             </p>
+        <p>Посетите ли вы наш сайт снова?<br />
+        <label>
+        <input type="radio" name="rating" value="yes" />Да
+        </label>
+        <label>
+        <input type="radio" name="rating" value="no" checked="checked" />Нет
+        </label>
+        <label>
+        <input type="radio" name="rating" value="may" />Возможно
+        </label>
+        </p>
+        <p>
+        <label for="comments">Комментарий:</label><br />
+        <textarea cols="50" rows="5" id="comments">Введите свой комментарий...</textarea>
+        </p>
+        <p></p>
+        <label>
+        <input type="checkbox" name="agreement" checked="checked" />
+        Я хочу получать рассылку с новостями сайта 
+        </label>
+        <br />
+        <input type="submit" value="Отправить отзыв" />
+       </fieldset>
+      </form>
+  </body>
+</html>
